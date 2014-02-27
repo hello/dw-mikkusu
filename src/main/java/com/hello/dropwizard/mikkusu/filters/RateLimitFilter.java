@@ -1,6 +1,7 @@
 package com.hello.dropwizard.mikkusu.filters;
 
 import com.hello.dropwizard.mikkusu.RateLimiter;
+import com.hello.dropwizard.mikkusu.RedisMemoryRateLimiter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,10 +12,10 @@ import java.io.IOException;
 
 public class RateLimitFilter implements Filter {
 
-    private final RateLimiter rateLimiter;
+    private final RedisMemoryRateLimiter rateLimiter;
     private static final Logger LOGGER = LoggerFactory.getLogger(RateLimitFilter.class);
 
-    public RateLimitFilter(RateLimiter rateLimiter) {
+    public RateLimitFilter(RedisMemoryRateLimiter rateLimiter) {
         this.rateLimiter = rateLimiter;
     }
 
