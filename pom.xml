@@ -6,7 +6,7 @@
 
     <groupId>com.hello.dropwizard</groupId>
     <artifactId>dropwizard-mikkusu</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <dependencies>
         <dependency>
@@ -28,7 +28,7 @@
 
     <repositories>
         <repository>
-            <id>s3.repo</id>
+            <id>hello-maven</id>
             <name>hello-maven</name>
             <url>s3://hello-maven/release</url>
         </repository>
